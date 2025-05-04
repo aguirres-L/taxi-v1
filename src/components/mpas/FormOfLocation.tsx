@@ -63,10 +63,11 @@ export const FormOfLocation = ({ onDestinationSelected, onFocus }: FormOfLocatio
           size={24} 
           color={globalColors.taxiYellow} 
           style={styles.inputIcon}
+          onPress={onFocus}
         />
         <TextInput
           style={styles.locationInput}
-          placeholder="Ubicación actual (lat, lon)"
+          placeholder="Ubicación "
           placeholderTextColor={globalColors.placeholder}
           value={pickupText}
           onChangeText={setPickupText}
@@ -80,7 +81,7 @@ export const FormOfLocation = ({ onDestinationSelected, onFocus }: FormOfLocatio
             }
           }}
         />
-        <TouchableOpacity onFocus={onFocus} onPress={fetchUserLocation}>
+        <TouchableOpacity /* onFocus={onFocus} */ onPress={onFocus}>
           <MaterialIcons 
             name="gps-fixed" 
             size={20} 
@@ -101,7 +102,7 @@ export const FormOfLocation = ({ onDestinationSelected, onFocus }: FormOfLocatio
         />
         <TextInput
           style={styles.locationInput}
-          placeholder="Destino (lat, lon o dirección)"
+          placeholder="Destino"
           placeholderTextColor={globalColors.placeholder}
           value={destinationText}
           onChangeText={setDestinationText}

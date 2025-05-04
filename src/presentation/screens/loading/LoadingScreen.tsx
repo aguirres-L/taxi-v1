@@ -79,6 +79,10 @@ console.log(userLocation,'userLocation loading screen');
     
         if (locationStatus === 'blocked') {
           await checkLocationPermission();
+                checkLocationServices();
+
+           // Obtener ubicación actual usando el store
+           await fetchUserLocation();
         }
     
         // Obtener ubicación actual usando el store
