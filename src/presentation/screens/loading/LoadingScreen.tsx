@@ -81,7 +81,7 @@ console.log(userLocation,'userLocation loading screen');
           await checkLocationPermission();
                 checkLocationServices();
 
-           // Obtener ubicación actual usando el store
+           // Obtener ubicación actual usando el storess
            await fetchUserLocation();
         }
     
