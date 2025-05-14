@@ -14,6 +14,24 @@
     },
     "plugins": [
       [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "buildToolsVersion": "34.0.0"
+          }
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#2196F3",
+          "androidMode": "default"
+        }
+      ],
+      [
         "react-native-permissions",
         {
           "iosPermissions": [
@@ -22,17 +40,16 @@
           ]
         }
       ],
-       
-
       [
         "expo-location",
         {
           "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location."
         }
-      ] 
+      ]
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.Transmitaxi.TransmitaxiMovil"
     },
     "android": {
       "adaptiveIcon": {
@@ -43,16 +60,28 @@
         "android.permission.CAMERA",
         "android.permission.RECORD_AUDIO",
         "android.permission.ACCESS_FINE_LOCATION",
-        "android.permission.ACCESS_COARSE_LOCATION"
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "RECEIVE_BOOT_COMPLETED"
       ],
       "config": {
         "googleMaps": {
-          "apiKey": "process.env.AIzaSyCSimFXop4MKU50o4fQJY1-5W1SnpiAWMo"
-        } 
-      }
+          "apiKey": "AIzaSyCSimFXop4MKU50o4fQJY1-5W1SnpiAWMo"
+        },
+        "googleServices": {
+          "disableVersionCheck": false
+        }
+      },
+      "package": "com.Transmitaxi.TransmitaxiMovil",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e916ae31-d791-4150-bcd7-264d1876b6bc"
+      }
+    },
+    "owner": "zer0cool"
   }
 }

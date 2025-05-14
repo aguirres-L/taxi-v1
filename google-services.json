@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "697619645689",
+    "project_id": "appclients-91d0d",
+    "storage_bucket": "appclients-91d0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697619645689:android:d13a4f30e0284ab5634e28",
+        "android_client_info": {
+          "package_name": "com.Transmitaxi.TransmitaxiMovil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697619645689-276c5qbg1ubqcma718u02hkeb4d2s6eu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb30hHcgnCbw3Q5yj4IO4H-d_2fThYnOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "697619645689-276c5qbg1ubqcma718u02hkeb4d2s6eu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
